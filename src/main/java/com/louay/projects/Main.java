@@ -21,7 +21,16 @@ public class Main {
             }
         }
 
+        int del = 0;
+        int numberOfDeletedLetter = s.length() % 3 ;
+        if (numberOfDeletedLetter != 0){
+            del = 3 - numberOfDeletedLetter;
+            counter += del;
+        }
 
+        System.out.println(numberOfDeletedLetter);
+
+        System.out.println("\nThe number of letters that were deleted : "+del);
         System.out.println("\nThe number of letters that were altered : "+counter);
 
     }
